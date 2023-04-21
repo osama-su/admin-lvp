@@ -2,9 +2,9 @@
 
 namespace Osamasu\AdminLvp;
 
+use Osamasu\AdminLvp\Commands\AdminLvpCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Osamasu\AdminLvp\Commands\AdminLvpCommand;
 
 class AdminLvpServiceProvider extends PackageServiceProvider
 {
