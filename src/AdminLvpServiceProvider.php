@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton;
+namespace Osamasu\AdminLvp;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use VendorName\Skeleton\Commands\SkeletonCommand;
+use Osamasu\AdminLvp\Commands\AdminLvpCommand;
 
-class SkeletonServiceProvider extends PackageServiceProvider
+class AdminLvpServiceProvider extends PackageServiceProvider
 {
     public function configurePackage(Package $package): void
     {
@@ -16,10 +16,12 @@ class SkeletonServiceProvider extends PackageServiceProvider
          * More info: https://github.com/spatie/laravel-package-tools
          */
         $package
-            ->name('skeleton')
+            ->name('admin-lvp')
             ->hasConfigFile()
+            ->hasRoutes(['web'])
             ->hasViews()
-            ->hasMigration('create_skeleton_table')
-            ->hasCommand(SkeletonCommand::class);
+            ->hasMigration('create_admin-lvp_table')
+            ->hasCommand(AdminLvpCommand::class)
+            ->publishesServiceProvider('AdminLvpServiceProvider');
     }
 }

@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace Osamasu\AdminLvp\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class AdminLvpCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'admin-lvp';
 
     public $description = 'My command';
 
