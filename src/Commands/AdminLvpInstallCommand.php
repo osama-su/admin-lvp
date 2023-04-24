@@ -33,7 +33,6 @@ class AdminLvpInstallCommand extends Command
         $this->comment('Publishing the AdminLvp lang files');
         $this->callSilent('vendor:publish', ['--tag' => 'admin-lvp-lang']);
 
-
         $this->comment('All done');
 
         return self::SUCCESS;

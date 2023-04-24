@@ -14,5 +14,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/dash', function () {
-    return "Hello World";
+    return 'Hello World';
 });
